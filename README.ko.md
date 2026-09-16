@@ -21,12 +21,12 @@
 </p>
 
 <p align="center">
-  <img src="docs/assets/completed-all.jpg" width="224" alt="완료 Task 사이드 패널">
+  <img src="docs/assets/completed-all-ko.jpg" width="224" alt="한국어 Task가 표시된 완료 사이드 패널">
   <img src="docs/assets/chat-ko.jpg" width="224" alt="실제 한국어 대화가 표시된 Codex Chat 사이드 패널">
-  <img src="docs/assets/workspace.jpg" width="240" alt="Chat과 완료 패널이 함께 열린 메인 Task 창">
+  <img src="docs/assets/workspace-ko.jpg" width="240" alt="한국어 프로젝트와 Task, Chat과 완료 패널이 함께 열린 메인 창">
 </p>
 
-<p align="center"><sub>완료 목록 · Codex Chat · Task<br>샘플 데이터로 촬영한 실제 네이티브 창을 나란히 배치했습니다.</sub></p>
+<p align="center"><sub>완료 목록 · Codex Chat · Task<br>한국어 샘플 데이터로 촬영한 실제 네이티브 창을 나란히 배치했습니다.<br>프로젝트·Task·대화는 한국어이며, 앱의 고정 UI는 영어입니다.</sub></p>
 
 FloatTask는 현재 작업 화면 옆에 간결한 할 일 목록을 띄웁니다. 다른 앱 위에 고정하거나 필요한 곳으로 옮기고, 메뉴바 클릭으로 잠시 숨길 수 있습니다. 완료한 일은 메인 목록에서 사라지고 별도 이력에 남습니다.
 
@@ -39,8 +39,8 @@ FloatTask는 현재 작업 화면 옆에 간결한 할 일 목록을 띄웁니�
 말풍선 버튼을 누르면 메인 창 옆에 별도의 채팅 패널이 열립니다. 목록을 떠나지 않고 Task를 추가·완료하거나 남은 작업을 물어볼 수 있습니다. 아래 대화는 샘플 프로젝트를 대상으로 실제 Codex가 응답한 내용입니다.
 
 <p align="center">
-  <img src="docs/assets/chat-ko.jpg" width="336" alt="남은 작업과 완료 개수를 실제 Codex에 한국어로 물어본 대화">
-  <img src="docs/assets/workspace.jpg" width="360" alt="대화에서 조회한 프로젝트의 미완료 Task와 완료 개수">
+  <img src="docs/assets/chat-ko.jpg" width="336" alt="실제 Codex에 한국어로 출시 안내문 추가와 체크리스트 완료를 요청한 대화">
+  <img src="docs/assets/workspace-ko.jpg" width="360" alt="한국어 대화로 추가한 Task와 갱신된 완료 개수">
 </p>
 
 Chat과 완료 목록은 동시에 열어둘 수 있습니다. 각 패널을 따로 닫을 수 있으며 Settings를 열어도 기존 패널을 교체하지 않습니다. [채팅 설정과 개인정보 안내 ↓](#codex-채팅)
@@ -50,8 +50,8 @@ Chat과 완료 목록은 동시에 열어둘 수 있습니다. 각 패널을 따
 프로젝트를 만들고 제목을 바로 편집합니다. Enter를 누르면 다음 Task를 이어서 입력할 수 있습니다. 긴 제목은 단어 단위로 줄여 표시하고, 마우스를 올리면 펼칩니다. 삭제 버튼 영역을 미리 확보해 텍스트 너비가 바뀌지 않습니다.
 
 <p align="center">
-  <img src="docs/assets/task-collapsed.jpg" width="360" alt="긴 제목을 단어 단위로 줄여 표시한 간결한 Task 목록">
-  <img src="docs/assets/task-entry.jpg" width="360" alt="키보드 연속 입력으로 현재 Task 바로 아래에 새 작업을 추가한 화면">
+  <img src="docs/assets/task-collapsed-ko.jpg" width="360" alt="긴 한국어 제목을 단어 단위로 줄여 표시한 Task 목록">
+  <img src="docs/assets/task-entry-ko.jpg" width="360" alt="제품 출시 프로젝트에 한국어 작업을 추가한 화면">
 </p>
 
 <p align="center"><sub>간결한 기본 목록과 바로 다음 줄에 추가한 Task.</sub></p>
@@ -61,11 +61,11 @@ Chat과 완료 목록은 동시에 열어둘 수 있습니다. 각 패널을 따
 완료한 일은 메인 목록에서 사라지고 별도 사이드 패널에 남습니다. 프로젝트별로 필터링하고 **Recently completed** 또는 **Date added**로 정렬하며, 체크 버튼을 누르면 다시 진행 중인 Task로 되돌릴 수 있습니다.
 
 <p align="center">
-  <img src="docs/assets/completed-all.jpg" width="336" alt="세 프로젝트의 완료 Task 네 개를 모아본 화면">
-  <img src="docs/assets/completed-project.jpg" width="336" alt="Product launch의 완료 Task 두 개로 필터링한 화면">
+  <img src="docs/assets/completed-all-ko.jpg" width="336" alt="한국어 프로젝트 세 개의 완료 Task 네 개를 모아본 화면">
+  <img src="docs/assets/completed-project-ko.jpg" width="336" alt="제품 출시의 완료 Task 두 개로 필터링한 화면">
 </p>
 
-<p align="center"><sub>왼쪽은 전체 프로젝트, 오른쪽은 Product launch만 표시한 이력입니다.</sub></p>
+<p align="center"><sub>왼쪽은 전체 프로젝트, 오른쪽은 제품 출시만 표시한 이력입니다.</sub></p>
 
 ### 작은 패널에 필요한 설정만
 
@@ -73,7 +73,7 @@ Chat과 완료 목록은 동시에 열어둘 수 있습니다. 각 패널을 따
 
 <p align="center">
   <img src="docs/assets/settings-ko.jpg" width="336" align="top" alt="메뉴바 표시와 고정 설정, 한국어 답변 선택이 있는 Settings 패널">
-  <img src="docs/assets/workspace.jpg" width="360" align="top" alt="독립적인 Settings 패널 옆에 유지되는 메인 Task 창">
+  <img src="docs/assets/workspace-ko.jpg" width="360" align="top" alt="독립적인 Settings 패널 옆에 유지되는 한국어 Task 목록">
 </p>
 
 ### 작업 공간에 맞는 네이티브 창
@@ -81,7 +81,7 @@ Chat과 완료 목록은 동시에 열어둘 수 있습니다. 각 패널을 따
 창 크기를 조절하면 위치와 크기를 기억합니다. 모든 Space에서 다른 앱 위에 고정하거나 Dock·Mission Control에 표시되는 일반 창으로 전환할 수 있습니다. 시스템의 밝은·어두운 외관, 기본 서체, SF Symbols, 접근성 레이블, 모션 감소 설정을 따릅니다.
 
 <p align="center">
-  <img src="docs/assets/window-wide.jpg" width="380" alt="창 크기를 조절하고 고정을 켠 FloatTask">
+  <img src="docs/assets/window-wide-ko.jpg" width="380" alt="한국어 Task 목록의 창 크기를 조절하고 고정을 켠 FloatTask">
 </p>
 
 <p align="center"><sub>세로 공간을 늘리고 Keep on top을 켠 Task 패널.</sub></p>
@@ -138,11 +138,11 @@ codex login
 
 요청 예시:
 
-> Product launch에 ‘릴리스 체크리스트 검토’ 추가해줘.
+> 제품 출시에 ‘출시 안내문 준비’ 추가해줘.
 >
 > ‘앱 아이콘 확정’을 완료 처리해줘.
 >
-> Design studio에 남은 작업을 보여줘.
+> 디자인 스튜디오에 남은 작업을 보여줘.
 
 앱은 **`gpt-5.6-luna`**, **`xhigh`** reasoning 설정으로 요청합니다. 설치된 CLI와 계정에서 해당 모델과 연동에 사용된 옵션을 지원해야 합니다. 이 값은 현재 Settings가 아니라 [`CodexTaskAgent.swift`](Sources/FloatTaskCore/CodexTaskAgent.swift)에 고정되어 있습니다. 다른 경로의 실행 파일은 앱 실행 환경의 `FLOATTASK_CODEX_PATH`로 지정할 수 있습니다.
 
@@ -169,7 +169,7 @@ codex login
 ./dist/floattaskctl projects list --json
 
 # 프로젝트 생성
-./dist/floattaskctl project add --title "Product launch" --json
+./dist/floattaskctl project add --title "제품 출시" --json
 
 # 따옴표 안의 자리표시자를 CLI가 반환한 실제 ID로 교체
 ./dist/floattaskctl task add --project "<project-id>" --title "체크리스트 검토" --json
