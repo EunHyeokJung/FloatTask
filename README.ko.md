@@ -21,11 +21,12 @@
 </p>
 
 <p align="center">
-  <img src="docs/assets/tasks.jpg" width="360" alt="세 개의 샘플 프로젝트와 미완료 Task를 표시한 FloatTask">
-  <img src="docs/assets/completed.jpg" width="336" alt="프로젝트 필터와 정렬 기능을 갖춘 완료 Task 목록">
+  <img src="docs/assets/completed-all.jpg" width="224" alt="완료 Task 사이드 패널">
+  <img src="docs/assets/chat-ko.jpg" width="224" alt="실제 한국어 대화가 표시된 Codex Chat 사이드 패널">
+  <img src="docs/assets/workspace.jpg" width="240" alt="Chat과 완료 패널이 함께 열린 메인 Task 창">
 </p>
 
-<p align="center"><sub>샘플 데이터로 촬영한 실제 앱 화면입니다. 왼쪽은 진행 중인 Task, 오른쪽은 완료 목록입니다.</sub></p>
+<p align="center"><sub>완료 목록 · Codex Chat · Task<br>샘플 데이터로 촬영한 실제 네이티브 창을 나란히 배치했습니다.</sub></p>
 
 FloatTask는 현재 작업 화면 옆에 간결한 할 일 목록을 띄웁니다. 다른 앱 위에 고정하거나 필요한 곳으로 옮기고, 메뉴바 클릭으로 잠시 숨길 수 있습니다. 완료한 일은 메인 목록에서 사라지고 별도 이력에 남습니다.
 
@@ -33,16 +34,59 @@ FloatTask는 현재 작업 화면 옆에 간결한 할 일 목록을 띄웁니�
 
 ## 주요 기능
 
-| 기능 | 설명 |
-| :--- | :--- |
-| **작은 작업 공간** | 프로젝트와 Task 중심의 구조, 바로 편집하는 제목, 키보드 연속 입력, 위치와 크기를 기억하는 패널. |
-| **항상 가까이에** | 모든 Space에서 다른 앱 위에 고정하거나, Dock·Mission Control에 표시되는 일반 창으로 전환. |
-| **간결한 목록** | 긴 제목은 마우스를 올리면 펼쳐집니다. 완료한 Task는 숨기고 프로젝트 옆에 체크 원과 실제 개수만 표시합니다. |
-| **완료 이력** | 별도 패널에서 프로젝트별 필터, 최근 완료순·추가한순 정렬, 한 번의 클릭으로 Task 재개. |
-| **선택형 Codex 채팅** | 자연어로 Task 관리, 한국어·영어 답변 선택, 채팅과 완료 패널 동시 사용. |
-| **공용 CLI** | JSON 출력과 동일한 저장소를 이용한 프로젝트·Task 생성, 이름 변경, 완료, 재개, 삭제. |
+### Task 옆에서 바로 Chat
 
-시스템 외관, SF Symbols, 키보드 단축키, 접근성 레이블, 모션 감소 설정을 지원합니다. Settings에는 **Show in menu bar**, **Keep on top**, **Reply language** 세 가지만 제공합니다.
+말풍선 버튼을 누르면 메인 창 옆에 별도의 채팅 패널이 열립니다. 목록을 떠나지 않고 Task를 추가·완료하거나 남은 작업을 물어볼 수 있습니다. 아래 대화는 샘플 프로젝트를 대상으로 실제 Codex가 응답한 내용입니다.
+
+<p align="center">
+  <img src="docs/assets/chat-ko.jpg" width="336" alt="남은 작업과 완료 개수를 실제 Codex에 한국어로 물어본 대화">
+  <img src="docs/assets/workspace.jpg" width="360" alt="대화에서 조회한 프로젝트의 미완료 Task와 완료 개수">
+</p>
+
+Chat과 완료 목록은 동시에 열어둘 수 있습니다. 각 패널을 따로 닫을 수 있으며 Settings를 열어도 기존 패널을 교체하지 않습니다. [채팅 설정과 개인정보 안내 ↓](#codex-채팅)
+
+### 빠르게 이어지는 Task 입력
+
+프로젝트를 만들고 제목을 바로 편집합니다. Enter를 누르면 다음 Task를 이어서 입력할 수 있습니다. 긴 제목은 단어 단위로 줄여 표시하고, 마우스를 올리면 펼칩니다. 삭제 버튼 영역을 미리 확보해 텍스트 너비가 바뀌지 않습니다.
+
+<p align="center">
+  <img src="docs/assets/task-collapsed.jpg" width="360" alt="긴 제목을 단어 단위로 줄여 표시한 간결한 Task 목록">
+  <img src="docs/assets/task-entry.jpg" width="360" alt="키보드 연속 입력으로 현재 Task 바로 아래에 새 작업을 추가한 화면">
+</p>
+
+<p align="center"><sub>간결한 기본 목록과 바로 다음 줄에 추가한 Task.</sub></p>
+
+### 프로젝트별로 보는 완료 이력
+
+완료한 일은 메인 목록에서 사라지고 별도 사이드 패널에 남습니다. 프로젝트별로 필터링하고 **Recently completed** 또는 **Date added**로 정렬하며, 체크 버튼을 누르면 다시 진행 중인 Task로 되돌릴 수 있습니다.
+
+<p align="center">
+  <img src="docs/assets/completed-all.jpg" width="336" alt="세 프로젝트의 완료 Task 네 개를 모아본 화면">
+  <img src="docs/assets/completed-project.jpg" width="336" alt="Product launch의 완료 Task 두 개로 필터링한 화면">
+</p>
+
+<p align="center"><sub>왼쪽은 전체 프로젝트, 오른쪽은 Product launch만 표시한 이력입니다.</sub></p>
+
+### 작은 패널에 필요한 설정만
+
+메인 창이나 Chat 리셋 옆의 설정 버튼을 누르면 같은 Settings 패널이 열립니다. **Show in menu bar**는 메뉴바 클릭으로 숨김·표시, **Keep on top**은 고정, **Reply language**는 이후 답변의 한국어·영어 선택을 담당합니다. 변경 내용은 즉시 저장됩니다.
+
+<p align="center">
+  <img src="docs/assets/settings-ko.jpg" width="336" align="top" alt="메뉴바 표시와 고정 설정, 한국어 답변 선택이 있는 Settings 패널">
+  <img src="docs/assets/workspace.jpg" width="360" align="top" alt="독립적인 Settings 패널 옆에 유지되는 메인 Task 창">
+</p>
+
+### 작업 공간에 맞는 네이티브 창
+
+창 크기를 조절하면 위치와 크기를 기억합니다. 모든 Space에서 다른 앱 위에 고정하거나 Dock·Mission Control에 표시되는 일반 창으로 전환할 수 있습니다. 시스템의 밝은·어두운 외관, 기본 서체, SF Symbols, 접근성 레이블, 모션 감소 설정을 따릅니다.
+
+<p align="center">
+  <img src="docs/assets/window-wide.jpg" width="380" alt="창 크기를 조절하고 고정을 켠 FloatTask">
+</p>
+
+<p align="center"><sub>세로 공간을 늘리고 Keep on top을 켠 Task 패널.</sub></p>
+
+[공용 CLI](#cli와-자동화)는 같은 Task 기능을 스크립트에 제공합니다. [Google Tasks](#google-tasks)는 수동 CLI 연동이며 별도의 앱 내 화면은 없습니다.
 
 ## 시작하기
 

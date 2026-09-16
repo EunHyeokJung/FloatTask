@@ -21,11 +21,12 @@
 </p>
 
 <p align="center">
-  <img src="docs/assets/tasks.jpg" width="360" alt="FloatTask showing three sample projects and their active tasks">
-  <img src="docs/assets/completed.jpg" width="336" alt="Completed tasks with project filtering and sorting">
+  <img src="docs/assets/completed-all.jpg" width="224" alt="Completed tasks side panel">
+  <img src="docs/assets/chat-en.jpg" width="224" alt="Codex chat side panel with a real task creation and completion conversation">
+  <img src="docs/assets/workspace.jpg" width="240" alt="Main task window with chat and completed-task panels open">
 </p>
 
-<p align="center"><sub>Actual app screens with sample data. Active tasks on the left; completed tasks on the right.</sub></p>
+<p align="center"><sub>Completion history · Codex chat · Tasks<br>Real native window captures, arranged side by side. Sample data throughout.</sub></p>
 
 FloatTask keeps a short task list beside the current workspace. Pin it above other apps, move it between projects, or tuck it away with a menu bar click. Completed work leaves the main list without losing its history.
 
@@ -33,16 +34,59 @@ Built with **SwiftUI + AppKit**, backed by a **local JSON file**, and paired wit
 
 ## Features
 
-| Feature | Detail |
-| :--- | :--- |
-| **A compact workspace** | Projects and tasks, inline editing, keyboard entry, and a resizable panel that remembers its position and size. |
-| **Always within reach** | Pin above other apps across Spaces, or switch to a regular Dock and Mission Control window. |
-| **Less clutter** | Long titles expand on hover. Completed tasks disappear from the main list; a check-circle count remains beside each project. |
-| **Completion history** | A separate panel with project filtering, recent-completion or date-added sorting, and one-click reopening. |
-| **Optional Codex chat** | Manage tasks in natural language. Choose Korean or English replies; keep chat and completion history open together. |
-| **A shared CLI** | Create, rename, complete, reopen, and delete tasks with JSON output and a shared, atomically updated store. |
+### Chat beside your tasks
 
-System appearance, SF Symbols, keyboard shortcuts, accessibility labels, and Reduce Motion support keep the interface native. Settings contains just three options: **Show in menu bar**, **Keep on top**, and **Reply language**.
+Open the chat bubble to bring up a separate side panel. Add a task, mark another complete, or ask what remains without leaving the task list. The conversation below uses the real Codex integration with a sample project.
+
+<p align="center">
+  <img src="docs/assets/chat-en.jpg" width="336" alt="Real Codex conversation adding launch notes and completing the release checklist">
+  <img src="docs/assets/workspace.jpg" width="360" alt="The resulting task list, with launch notes added and the completed count updated">
+</p>
+
+Chat and completion history can stay open at the same time. Each panel has its own close control; opening Settings does not replace either panel. [Chat setup and privacy details ↓](#codex-chat)
+
+### Quick task capture
+
+Create projects, edit titles in place, and press Enter to continue with the next task. Long titles stay compact with word-aware truncation and expand on hover. A reserved action area keeps the text width stable.
+
+<p align="center">
+  <img src="docs/assets/task-collapsed.jpg" width="360" alt="A compact task list with a long title truncated at a word boundary">
+  <img src="docs/assets/task-entry.jpg" width="360" alt="A new task inserted directly below the current task using keyboard entry">
+</p>
+
+<p align="center"><sub>A compact list and the next task added in place.</sub></p>
+
+### Completion history, by project
+
+Completed work leaves the main list and remains available in its own side panel. Filter by project, sort by **Recently completed** or **Date added**, and click a checkmark to reopen a task.
+
+<p align="center">
+  <img src="docs/assets/completed-all.jpg" width="336" alt="All four completed sample tasks across three projects">
+  <img src="docs/assets/completed-project.jpg" width="336" alt="Completion history filtered to the two tasks in Product launch">
+</p>
+
+<p align="center"><sub>All projects on the left; Product launch only on the right.</sub></p>
+
+### Three settings, one small panel
+
+The gear in the main window or beside Chat's reset button opens the same compact Settings panel. **Show in menu bar** enables one-click hide/show. **Keep on top** controls the pin. **Reply language** switches future replies between Korean and English. Changes save immediately.
+
+<p align="center">
+  <img src="docs/assets/settings.jpg" width="336" align="top" alt="Settings with menu bar and always-on-top controls enabled and English replies selected">
+  <img src="docs/assets/workspace-pinned.jpg" width="360" align="top" alt="The task window with Keep on top enabled, matching the Settings panel">
+</p>
+
+### A flexible native window
+
+Resize the panel to fit the workspace; its position and size are remembered. Pin it across Spaces or switch to a regular Dock and Mission Control window. The interface follows the system's light or dark appearance, with native fonts, SF Symbols, accessibility labels, and Reduce Motion support.
+
+<p align="center">
+  <img src="docs/assets/window-wide.jpg" width="380" alt="A resized FloatTask window with the pin enabled">
+</p>
+
+<p align="center"><sub>A taller task panel with Keep on top enabled.</sub></p>
+
+The [shared CLI](#cli--automation) provides the same task operations for scripts. [Google Tasks](#google-tasks) is a manual CLI integration; it does not add a separate in-app screen.
 
 ## Getting started
 

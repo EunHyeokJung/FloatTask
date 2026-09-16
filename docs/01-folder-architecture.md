@@ -68,7 +68,7 @@ FloatTask
 ## 책임과 의존 방향
 
 - `README.md`와 `README.ko.md`: 영어·한국어 제품 소개와 설치·사용·개발 안내. 서로 같은 기능 범위를 안내합니다.
-- `docs/assets`: 격리된 샘플 데이터로 촬영한 README 화면. 실제 사용자 데이터나 생성한 UI 목업은 포함하지 않습니다.
+- `docs/assets`: 격리된 샘플 데이터로 촬영한 기능별 README 화면. 메인·채팅·완료·Settings 등 실제 네이티브 창을 각각 촬영하고 README에서 나란히 배치해 보조 패널 관계를 보여줍니다. 채팅은 실제 요청·응답을 사용하며 실제 사용자 데이터나 생성한 UI 목업은 포함하지 않습니다.
 - `FloatTaskCore`: 도메인 모델, 원자적 JSON 저장, Codex 작업 명령 검증, Google Tasks REST 어댑터
 - `Sources/FloatTaskCore/ChatReplyLanguage.swift`: 봇 답변 언어와 언어별 결과 문구. UI 설정 저장은 앱에서 담당합니다.
 - `FloatTask`: AppKit 메인/채팅 창 제어와 SwiftUI 인터페이스
