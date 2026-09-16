@@ -1,0 +1,23 @@
+# SwiftPM and local build products
+.build/
+.swiftpm/
+dist/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+
+# macOS and local tooling
+.DS_Store
+.codex/
+*.log
+
+# Runtime task stores and local credentials
+tasks.json
+tasks.json.lock
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.key
+*.mobileprovision
